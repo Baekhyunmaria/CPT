@@ -1,0 +1,16 @@
+import random
+lr = 50
+wr = 50
+def setup():
+    size(500,500)
+
+for i in range(3):
+    xp =  random.randrange(25, 500, 50)
+    yp =  random.randrange(25, 500, 50)
+    print(xp,yp)
+    
+def draw():
+    for x in range(0,500,50):
+        for y in range(0,500,50):
+            rect(x,y,lr,wr)
+        ellipse(xp,yp,30,30)
